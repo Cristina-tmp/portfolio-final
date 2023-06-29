@@ -93,7 +93,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about" className="">
         <div className="">
           {/*   @ts-ignore */}
           <About pageInfo={pageInfo} />
@@ -101,22 +101,22 @@ export default function LandingPage() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="snap-start">
+      <section id="skills" className="">
         <Skills skills={skills} />
       </section>
 
       {/* projects */}
-      <section id="projects" className="snap-start">
+      <section id="projects" className="">
         <Projects projects={projects} />
       </section>
 
       {/* copywriting */}
-      <section id="designWork" className="snap-start">
+      <section id="designWork" className="">
         <DesignWork designs={designs} />
       </section>
 
       {/* contact */}
-      <section id="contact" className="snap-end">
+      <section id="contact" className="">
         {/*   @ts-ignore */}
         <Contact pageInfo={pageInfo} />
       </section>
