@@ -38,24 +38,24 @@ function Contact({ pageInfo }: Props) {
       </h3>
 
       <div className="flex flex-col space-y-8">
-        <h4 className="text-4xl font-semibold text-center mt-8 pt-4">
+        <h4 className="text-4xl font-semibold tracking-[10px] text-center mt-8 pt-4">
           {`Let's Talk`}
         </h4>
 
         <div className="relative flex flex-col items-start space-y-4">
           <div className="flex items-center justify-center space-x-5">
             <PhoneIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
-            <p className="text-2xl">{pageInfo.phoneNumber}</p>
+            <p className="text-2xl text-gray-500">{pageInfo.phoneNumber}</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
             <EnvelopeIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
-            <p className="text-2xl">{pageInfo.email}</p>
+            <p className="text-2xl text-gray-500">{pageInfo.email}</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5 mb-8">
             <MapPinIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
-            <p className="text-2xl">{pageInfo.address}</p>
+            <p className="text-2xl text-gray-500">{pageInfo.address}</p>
           </div>
 
           <form
@@ -91,7 +91,7 @@ function Contact({ pageInfo }: Props) {
               className="contactInput"
             />
             <button
-              className="rounded-md text-black text-xl font-bold bg-[#f7ab0a] py-4 px-10 hover:bg-[#f5902b] transition-colors "
+              className="tracking-wide rounded-md text-black text-xl font-bold bg-[#f7ab0a] py-4 px-10 hover:bg-[#f5902b] transition-colors "
               type="submit"
             >
               Submit

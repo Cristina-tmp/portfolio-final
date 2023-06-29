@@ -23,9 +23,6 @@ const About = ({ pageInfo }: Props) => {
       className="h-screen flex relative flex-col text-center
    md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto "
     >
-      <h3 className="absolute top-20  uppercase tracking-[20px] text-gray-500 text-2xl xl:pl-14">
-        About
-      </h3>
       <motion.img
         initial={{
           x: -200,
@@ -48,16 +45,29 @@ const About = ({ pageInfo }: Props) => {
       />
 
       <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold ">
-          About <span className="underline decoration-[#f7ab0a]/50">Me</span>
-        </h4>
-        <p className="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dicta
-          itaque eveniet magni alias? Recusandae quis eveniet quibusdam pariatur
-          voluptatibus quas illo adipisci veritatis aliquid consequatur itaque
-          quae alias non magni impedit aspernatur dolore cumque culpa nisi,
-          facere voluptatem exercitationem error? Omnis voluptatibus facilis
-          vel, enim officia repudiandae cupiditate ducimus?
+        <h2 className="text-5xl text-white ">
+          Why <span className="underline decoration-[#f7ab0a]/50">Me</span> ?
+        </h2>
+
+        <p className="text-lg text-gray-500 whitespace-pre-line font-serif">
+          🎨 Stunning Visuals: I help you create{" "}
+          <span className="font-bold text-[#f7ab0a]">visually stunning </span>
+          websites that generate sales and set you apart from the competition.{" "}
+        </p>
+
+        <p className="text-lg text-gray-500 whitespace-pre-line font-serif">
+          {" "}
+          🌟 Your Success is My Priority: When you choose to work with me,
+          you&apos;re selecting a dedicated partner{" "}
+          <span className="font-bold text-[#f7ab0a]">committed </span>
+          to your success.{" "}
+        </p>
+
+        <p className="text-lg text-gray-500 whitespace-pre-line font-serif">
+          {" "}
+          🚀 Lead the Way: Specializing in web design and development, I&apos;m
+          here to drive business growth and deliver consistent results for{" "}
+          <span className="font-bold text-[#f7ab0a]">your brand. </span>
         </p>
       </div>
     </motion.div>

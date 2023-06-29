@@ -22,12 +22,8 @@ const Skills = ({ skills }: Props) => {
       }}
       className="min-h-screen flex relative flex-col justify-center items-center"
     >
-      <h3 className="uppercase absolute tracking-widest text-gray-500 text-2xl mb-4 top-24">
+      <h3 className="uppercase absolute tracking-[15px] text-gray-500 text-2xl mb-4 top-0">
         Skills
-      </h3>
-
-      <h3 className="uppercase absolute tracking-wider text-gray-500 text-sm mb-8 top-36">
-        Hover over a skill
       </h3>
 
       <div className="grid grid-cols-4 gap-5">

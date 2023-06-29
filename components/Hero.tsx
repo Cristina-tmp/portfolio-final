@@ -34,11 +34,11 @@ const Hero = ({ pageInfo }: Props) => {
       <NeonText />
 
       <p className="text-lg text-white capitalize font-light tracking-widest">
-        Here to deliver{" "}
-        <span className="tracking-widest font-semibold uppercase underline decoration-yellow-400">
-          YOU
+        I Create{" "}
+        <span className="tracking-widest font-semibold capitalize underline decoration-yellow-400">
+          Artistic & profitable
         </span>{" "}
-        the results.
+        Websites.
       </p>
       <div className="pt-5">
         <Link href="#about">
