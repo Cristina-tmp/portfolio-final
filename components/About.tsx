@@ -9,7 +9,7 @@ type Props = {
 };
 
 const About = ({ pageInfo }: Props) => {
-  console.log(pageInfo.heroImage);
+  //console.log(pageInfo.heroImage);
   // const imageUrl = pageInfo.profilePic
   //   ? urlForImage(pageInfo.profilePic).url()
   //   : null;

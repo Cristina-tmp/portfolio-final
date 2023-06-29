@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Hero = ({ pageInfo }: Props) => {
-  console.log(pageInfo);
+  //console.log(pageInfo);
   return (
     <motion.div
       initial={{ opacity: 0 }}

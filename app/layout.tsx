@@ -10,8 +10,11 @@ const fredericka_the_Great = Fredericka_the_Great({
 });
 
 export const metadata = {
-  title: "Cristina Web Developer",
-  description: "Cristina Web Developer",
+  title: "Cristina | Design & Tech Consultant",
+  description: "Cristina | Design & Tech Consultant",
+  icons: {
+    icon: "./public/images/favicon.ico",
+  },
 };
 
 export default function RootLayout({
