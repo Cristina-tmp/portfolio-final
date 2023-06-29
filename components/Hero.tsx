@@ -3,8 +3,16 @@ import { motion } from "framer-motion";
 import NeonText from "@/components/NeonText";
 import Image from "next/image";
 import Link from "next/link";
+import { PageInfo } from "@/typings";
+import urlFor from "@/sanity/lib/image";
+//import { urlForImage } from "@/sanity/lib/image";
 
-const Hero = () => {
+type Props = {
+  pageInfo: PageInfo;
+};
+
+const Hero = ({ pageInfo }: Props) => {
+  console.log(pageInfo);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -16,7 +24,8 @@ const Hero = () => {
         Digital Marketing | Web Development
       </h2>
       <Image
-        src="https://i.imgur.com/mPGaWLc.gif"
+        //src="https://i.imgur.com/mPGaWLc.gif"
+        src={urlFor(pageInfo.profilePic).url()}
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
         width={128}
         height={128}
@@ -33,26 +42,26 @@ const Hero = () => {
       </p>
       <div className="pt-5">
         <Link href="#about">
-          <button className="heroButton">About</button>
+          <button className="heroButton tracking-widest">About</button>
         </Link>
 
         <Link href="#skills">
-          <button className="heroButton">Skills</button>
+          <button className="heroButton tracking-widest">Skills</button>
         </Link>
 
         <Link href="#projects">
-          <button className="heroButton">Projects</button>
+          <button className="heroButton tracking-widest">Projects</button>
         </Link>
 
         <Link href="#contact">
-          <button className="heroButton">Contact</button>
+          <button className="heroButton tracking-widest">Contact</button>
         </Link>
       </div>
       <a
-        href="#"
+        href="#projects"
         className="px-6 py-3 mt-8 text-lg font-bold text-white bg-[#f5902b] rounded transition-colors"
       >
-        Get Started
+        My Work
       </a>
     </motion.div>
   );

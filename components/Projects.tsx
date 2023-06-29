@@ -1,10 +1,14 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
+import { Project as ProjectType } from "@/typings";
+import Link from "next/link";
 
-type Props = {};
+type Props = {
+  projects: ProjectType[];
+};
 
-const Projects = (props: Props) => {
+const Projects = ({ projects }: Props) => {
   return (
     <motion.div
       initial={{
@@ -23,10 +27,11 @@ const Projects = (props: Props) => {
       </h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        {projects?.map((project) => (
+          <Link href={project.linkToBuild} passHref={true} key={project._id}>
+            <ProjectCard key={project._id} project={project} />
+          </Link>
+        ))}
       </div>
       {/* cards */}
     </motion.div>

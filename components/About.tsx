@@ -1,7 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { PageInfo } from "@/typings";
+import urlFor from "@/sanity/lib/image";
+import { urlForImage } from "@/sanity/lib/image";
 
-const About = () => {
+type Props = {
+  pageInfo: PageInfo;
+};
+
+const About = ({ pageInfo }: Props) => {
+  console.log(pageInfo.heroImage);
+  // const imageUrl = pageInfo.profilePic
+  //   ? urlForImage(pageInfo.profilePic).url()
+  //   : null;
   return (
     <motion.div
       initial={{
@@ -10,7 +21,7 @@ const About = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="h-screen flex relative flex-col text-center
-   md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto"
+   md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto "
     >
       <h3 className="absolute top-20  uppercase tracking-[20px] text-gray-500 text-2xl xl:pl-14">
         About
@@ -28,8 +39,11 @@ const About = () => {
         transition={{
           duration: 1.2,
         }}
-        src="https://elcomercio.pe/resizer/yHlVmeje9JdLEROBvNgsdoVpwRs=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KRKOINCP7JGR7KWT4HNBDSJPDA.jpg"
-        alt="Rick about photo"
+        //src="https://elcomercio.pe/resizer/yHlVmeje9JdLEROBvNgsdoVpwRs=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/KRKOINCP7JGR7KWT4HNBDSJPDA.jpg"
+        //src={urlFor(pageInfo.heroImage).url()}
+        src={urlFor(pageInfo?.heroImage).url()}
+        //src={imageUrl}
+        alt="about photo"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[600px]"
       />
 

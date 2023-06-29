@@ -18,22 +18,22 @@ export interface PageInfo extends SanityBody {
   address: string;
   bgInfo: string;
   email: string;
-  heroImage: Image;
+  heroImage: Image & { [key: string]: string };
   name: string;
   phoneNumber: string;
-  profilePic: Image;
+  profilePic: Image & { [key: string]: string };
 }
 
 export interface TechStack extends SanityBody {
   _type: "techStack";
   title: string;
-  image: Image;
+  image: Image & { [key: string]: string };
   title: string;
 }
 
 export interface Skill extends SanityBody {
   _type: "skill";
-  image: Image;
+  image: Image & { [key: string]: string };
   progress: number;
   title: string;
 }
@@ -41,7 +41,7 @@ export interface Skill extends SanityBody {
 export interface Project extends SanityBody {
   _type: "project";
   title: string;
-  image: Image;
+  image: Image & { [key: string]: string };
   // summary: string;
   // techStack: TechStack[];
   linkToBuild: string;
@@ -50,7 +50,7 @@ export interface Project extends SanityBody {
 export interface Design extends SanityBody {
   _type: "design";
   title: string;
-  image: Image;
+  image: Image & { [key: string]: string };
   // summary: string;
   // techStack: TechStack[];
   linkToBuild: string;

@@ -1,10 +1,13 @@
 import React from "react";
 import DesignWorkCard from "./DesignWorkCard";
 import { motion } from "framer-motion";
+import { Design as DesignType } from "@/typings";
 
-type Props = {};
+type Props = {
+  designs: DesignType[];
+};
 
-const DesignWork = (props: Props) => {
+const DesignWork = ({ designs }: Props) => {
   return (
     <motion.div
       initial={{
@@ -23,10 +26,9 @@ const DesignWork = (props: Props) => {
       </h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40">
-        <DesignWorkCard />
-        <DesignWorkCard />
-        <DesignWorkCard />
-        <DesignWorkCard />
+        {designs?.map((design) => (
+          <DesignWorkCard key={design._id} design={design} />
+        ))}
       </div>
       {/* cards */}
     </motion.div>
