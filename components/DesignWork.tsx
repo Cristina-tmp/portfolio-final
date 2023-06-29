@@ -25,7 +25,7 @@ const DesignWork = ({ designs }: Props) => {
         Copywriting
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40 overflow-y-scroll snap-y snap-mandatory">
         {designs?.map((design) => (
           <DesignWorkCard key={design._id} design={design} />
         ))}

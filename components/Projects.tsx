@@ -26,7 +26,7 @@ const Projects = ({ projects }: Props) => {
         Web Design & Development
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40 overflow-y-scroll snap-y snap-mandatory">
         {projects?.map((project) => (
           <Link href={project.linkToBuild} passHref={true} key={project._id}>
             <ProjectCard key={project._id} project={project} />
