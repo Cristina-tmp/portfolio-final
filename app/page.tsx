@@ -88,12 +88,14 @@ export default function LandingPage() {
       >
         <BackgroundMotion />
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center snap-start">
+          {/*   @ts-ignore */}
           <Hero pageInfo={pageInfo} />
         </div>
       </section>
 
       <section id="about" className="snap-center">
         <div className="">
+          {/*   @ts-ignore */}
           <About pageInfo={pageInfo} />
         </div>
       </section>
