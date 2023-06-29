@@ -117,6 +117,7 @@ export default function LandingPage() {
 
       {/* contact */}
       <section id="contact" className="snap-end">
+        {/*   @ts-ignore */}
         <Contact pageInfo={pageInfo} />
       </section>
 
