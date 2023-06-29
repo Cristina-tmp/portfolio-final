@@ -26,7 +26,7 @@ const Skills = ({ skills }: Props) => {
         Skills
       </h3>
 
-      <div className="grid grid-cols-4 gap-5 snap-y snap-mandatory">
+      <div className="grid grid-cols-4 gap-5">
         {skills.map((skill) => (
           <SkillComp key={skill._id} skill={skill} />
         ))}
