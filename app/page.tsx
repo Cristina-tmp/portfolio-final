@@ -122,11 +122,14 @@ export default function LandingPage() {
       </section>
 
       {/* home btn */}
-      <Link href="#hero" className="sticky bottom-14 cursor-pointer">
+      <Link
+        href="#hero"
+        className="sticky bottom-24 sm:bottom-8 cursor-pointer"
+      >
         <div className="inline-block">
           <Image
             src={rick}
-            width={100}
+            width={80}
             alt="home icon"
             className="rounded-full shadow-lg ml-4"
           />

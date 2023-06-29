@@ -22,7 +22,7 @@ const Projects = ({ projects }: Props) => {
       }}
       className="relative flex flex-col justify-center items-center mx-8 overflow-x-hidden snap-y snap-mandatory  "
     >
-      <h3 className="uppercase absolute top-24 tracking-[20px] text-gray-200 text-lg md:text-2xl z-20">
+      <h3 className="uppercase absolute top-24 tracking-[20px] text-gray-200 text-md break-words sm:text-2xl z-20 ml-12">
         Web Design & Development
       </h3>
 

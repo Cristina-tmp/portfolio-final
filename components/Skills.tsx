@@ -22,7 +22,7 @@ const Skills = ({ skills }: Props) => {
       }}
       className="min-h-screen flex relative flex-col justify-center items-center l"
     >
-      <h3 className="uppercase absolute tracking-[15px] text-gray-500 text-2xl mb-4 top-0">
+      <h3 className="uppercase absolute tracking-[15px] text-white text-2xl mb-4 top-0">
         Skills
       </h3>
 
