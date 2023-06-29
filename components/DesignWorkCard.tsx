@@ -25,7 +25,7 @@ const DesignWorkCard = ({ design, directionLeft }: Props) => {
       initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
-      className="relative flex flex-col items-center cursor-pointer p-6 bg-slate-400/10"
+      className="relative flex flex-col items-center cursor-pointer p-6 bg-slate-400/10 overflow-hidden"
     >
       <div className="flex flex-col items-start">
         <div className="border border-gray-500/40 rounded-md p-4">
@@ -40,15 +40,15 @@ const DesignWorkCard = ({ design, directionLeft }: Props) => {
         <Dialog
           open={isOpen}
           onClose={closeModal}
-          className="fixed inset-0 z-10 overflow-y-auto w-screen h-screen flex justify-center items-center"
+          className="fixed inset-0 z-10 overflow-y-auto w-screen h-screen  flex justify-center items-center"
         >
-          <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+          <Dialog.Overlay className="fixed inset-0 bg-black/30" />
           <Dialog.Panel className="flex items-center justify-center min-h-screen">
-            <div className="max-w-full max-h-full">
+            <div className="max-w-7xl max-h-full">
               <img
                 src={urlFor(design.image).url()}
                 alt="Image"
-                className="max-w-7xl max-h-screen object-cover"
+                className="max-w-lg md:max-w-7xl max-h-screen object-cover p-20"
               />
             </div>
           </Dialog.Panel>

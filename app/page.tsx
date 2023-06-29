@@ -122,7 +122,7 @@ export default function LandingPage() {
       </section>
 
       {/* home btn */}
-      <Link href="#hero" className="sticky bottom-5 cursor-pointer">
+      <Link href="#hero" className="sticky bottom-14 cursor-pointer">
         <div className="inline-block">
           <Image
             src={rick}

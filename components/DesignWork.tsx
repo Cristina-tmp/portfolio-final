@@ -19,13 +19,13 @@ const DesignWork = ({ designs }: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="relative flex flex-col justify-center items-center mx-8 overflow-x-hidden"
+      className="relative flex flex-col justify-center items-center mx-8 overflow-x-hidden "
     >
-      <h3 className="uppercase absolute top-24 tracking-[20px] text-gray-500 text-2xl z-20">
+      <h3 className="uppercase absolute top-24 tracking-[20px] text-gray-200 text-lg md:text-2xl z-20">
         Copywriting
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40 snap-x snap-mandatory">
         {designs?.map((design) => (
           <DesignWorkCard key={design._id} design={design} />
         ))}

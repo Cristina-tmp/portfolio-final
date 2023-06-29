@@ -18,7 +18,7 @@ const Hero = ({ pageInfo }: Props) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex flex-col items-center justify-center min-h-screen relative"
+      className="flex flex-col items-center justify-center min-h-screen relative snap-y snap-mandatory"
     >
       <h2 className="text-sm text-gray-500 uppercase tracking-[15px] pb-20">
         Digital Marketing | Web Development

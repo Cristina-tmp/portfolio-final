@@ -20,13 +20,13 @@ const Projects = ({ projects }: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="relative flex flex-col justify-center items-center mx-8 overflow-x-hidden  "
+      className="relative flex flex-col justify-center items-center mx-8 overflow-x-hidden snap-y snap-mandatory  "
     >
-      <h3 className="uppercase absolute top-24 tracking-[20px] text-gray-500 text-2xl z-20">
+      <h3 className="uppercase absolute top-24 tracking-[20px] text-gray-200 text-lg md:text-2xl z-20">
         Web Design & Development
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-44 md:mt-40 snap-x snap-mandatory">
         {projects?.map((project) => (
           <Link href={project.linkToBuild} passHref={true} key={project._id}>
             <ProjectCard key={project._id} project={project} />

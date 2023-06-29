@@ -21,7 +21,7 @@ const About = ({ pageInfo }: Props) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="h-screen flex relative flex-col text-center
-   md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto "
+   md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center mx-auto"
     >
       <motion.img
         initial={{
@@ -41,7 +41,7 @@ const About = ({ pageInfo }: Props) => {
         src={urlFor(pageInfo?.heroImage).url()}
         //src={imageUrl}
         alt="about photo"
-        className="-mb-18 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[600px]"
+        className="-mb-18 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[600px] snap-y snap-mandatory overflow-scroll "
       />
 
       <div className="space-y-10 px-0 md:px-10">
