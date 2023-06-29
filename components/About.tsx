@@ -41,9 +41,9 @@ const About = ({ pageInfo }: Props) => {
         src={urlFor(pageInfo?.heroImage).url()}
         //src={imageUrl}
         alt="about photo"
-        className="-mb-18 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[600px] "
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 object-cover rounded-full md:rounded-lg md:w-64 md:h-64 xl:w-[500px] xl:h-[600px] "
       />
-
+      s
       <div className="space-y-10 px-0 md:px-10">
         <h2 className="text-5xl text-white ">
           Why <span className="underline decoration-[#f7ab0a]/50">Me</span> ?

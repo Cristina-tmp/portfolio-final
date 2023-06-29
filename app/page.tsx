@@ -77,7 +77,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll overflow-x-hidden z-0">
+    <div className="h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll scroll-smooth  z-0">
       <Head>
         <title>Landing Page</title>
       </Head>
@@ -93,7 +93,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about" className="snap-end">
         <div className="">
           {/*   @ts-ignore */}
           <About pageInfo={pageInfo} />
@@ -101,7 +101,7 @@ export default function LandingPage() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="snap-start">
+      <section id="skills" className="snap-end">
         <Skills skills={skills} />
       </section>
 
@@ -116,7 +116,7 @@ export default function LandingPage() {
       </section>
 
       {/* contact */}
-      <section id="contact" className="snap-start">
+      <section id="contact" className="snap-end">
         {/*   @ts-ignore */}
         <Contact pageInfo={pageInfo} />
       </section>
