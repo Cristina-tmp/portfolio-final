@@ -16,14 +16,14 @@ const ProjectCard = ({ project, directionLeft }: Props) => {
       initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1, x: 0 }}
-      className="relative flex flex-col items-center cursor-pointer p-6 bg-slate-400/10 snap-x snap-mandatory overflow-hidden"
+      className="relative flex flex-col items-center cursor-pointer p-6 bg-slate-400/10 snap-x snap-mandatory overflow-hidden h-96"
     >
-      <div className="flex flex-col items-start">
-        <div className="border border-gray-500/40 rounded-md p-4">
+      <div className="flex flex-col items-start mt-6">
+        <div className="border border-gray-500/40 rounded-md">
           <img
             src={urlFor(project.image).url()}
             alt="project-image"
-            className="object-cover rounded-2xl hover:scale-105 ease-in-out transition-all duration-500 filter hover:grayscale"
+            className="object-contain h-60 w-full rounded-2xl hover:scale-105 ease-in-out transition-all duration-500 filter hover:grayscale"
           />
         </div>
 

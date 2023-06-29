@@ -124,7 +124,7 @@ export default function LandingPage() {
       {/* home btn */}
       <Link
         href="#hero"
-        className="sticky bottom-24 sm:bottom-8 cursor-pointer"
+        className="sticky bottom-24 md:bottom-8 cursor-pointer"
       >
         <div className="inline-block">
           <Image

@@ -21,7 +21,7 @@ const DesignWork = ({ designs }: Props) => {
       }}
       className="relative flex flex-col justify-center items-center mx-8 overflow-x-hidden "
     >
-      <h3 className="uppercase absolute top-24 tracking-[20px] text-gray-200 text-lg md:text-2xl z-20">
+      <h3 className="uppercase absolute top-24 tracking-[20px] text-white text-lg md:text-2xl z-20">
         Copywriting
       </h3>
 
