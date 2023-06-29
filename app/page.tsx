@@ -77,7 +77,7 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll scroll-smooth  z-0">
+    <div className="h-screen scroll-smooth  z-0">
       <Head>
         <title>Landing Page</title>
       </Head>
