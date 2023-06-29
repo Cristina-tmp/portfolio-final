@@ -1,11 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+} */
+
+:root {
+  --foreground-rgb: 255, 255, 255
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +24,7 @@
 }
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth bg-black;
   }
 }
 @layer components {
