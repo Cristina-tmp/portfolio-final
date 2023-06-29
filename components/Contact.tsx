@@ -31,41 +31,47 @@ function Contact({ pageInfo }: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex flex-col relative text-center md:text-left md:flex-row max-w-sm mx-auto px-auto justify-evenly items-center snap-y snap-mandatory overflow-scroll"
+      className="h-screen flex flex-col w-full relative text-center md:text-left md:flex-row justify-evenly items-center mx-auto"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
 
       <div className="flex flex-col space-y-8">
-        <h4 className="text-4xl font-semibold tracking-[10px] text-center mt-8 pt-4">
+        <h4 className="text-lg sm:text-2xl font-semibold tracking-[10px] text-center mt-8 pt-4 text-white">
           {`Let's Talk`}
         </h4>
 
         <div className="relative flex flex-col items-start space-y-4">
-          <div className="flex items-center justify-center space-x-5">
+          <div className="flex items-center justify-center space-x-5 mx-auto">
             <PhoneIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
-            <p className="text-2xl text-gray-500">{pageInfo.phoneNumber}</p>
+            <p className="text-lg sm:text-2xl text-gray-500">
+              {pageInfo.phoneNumber}
+            </p>
           </div>
 
-          <div className="flex items-center justify-center space-x-5">
+          <div className="flex items-center justify-center space-x-5 mx-auto">
             <EnvelopeIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
-            <p className="text-2xl text-gray-500">{pageInfo.email}</p>
+            <p className="text-lg sm:text-2xl text-gray-500">
+              {pageInfo.email}
+            </p>
           </div>
 
-          <div className="flex items-center justify-center space-x-5 mb-8">
+          <div className="flex items-center justify-center space-x-5 mb-8 mx-auto">
             <MapPinIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
-            <p className="text-2xl text-gray-500">{pageInfo.address}</p>
+            <p className="text-lg sm:text-2xl text-gray-500">
+              {pageInfo.address}
+            </p>
           </div>
 
           <form
             onSubmit={handleSubmit(onSubmit)}
             action=""
-            className="flex flex-col space-y-3 w-full max-w-2xl mx-auto"
+            className="flex flex-col space-y-3 w-full max-w-2xl px-8 mx-auto"
           >
             {" "}
             {/* Adjusted width using max-w-2xl */}
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 ">
               <input
                 {...register("name")}
                 placeholder="Name"

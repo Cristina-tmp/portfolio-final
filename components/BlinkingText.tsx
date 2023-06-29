@@ -6,7 +6,7 @@ const BlinkingText = () => {
   const [text] = useTypewriter({
     words: [
       "Hi, I'm Cristina",
-      "Web Designer, Developer, and digital marketer",
+      "Web Designer, Developer, and Digital Marketer",
     ],
     loop: true,
     delaySpeed: 2000,
