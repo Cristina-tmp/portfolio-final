@@ -20,13 +20,13 @@ const Skills = ({ skills }: Props) => {
       transition={{
         duration: 1.5,
       }}
-      className="min-h-screen flex relative flex-col justify-center items-center "
+      className="min-h-screen flex relative flex-col justify-center items-center  "
     >
       <h3 className="uppercase absolute tracking-[15px] text-white text-2xl mb-4 top-0">
         Skills
       </h3>
 
-      <div className="grid grid-cols-4 gap-5 overflow-y-scroll snap-y snap-mandatory">
+      <div className="grid grid-cols-4 gap-5">
         {skills.map((skill) => (
           <SkillComp key={skill._id} skill={skill} />
         ))}

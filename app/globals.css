@@ -34,7 +34,7 @@
 
   .heroButton {
     @apply px-6 py-2 border-[#242424] rounded-full -tracking-widest text-sm text-gray-500 uppercase transition-all
-    hover:border-[#f7ab0a]/40 hover:text-[#f7ab0a]/40;
+    hover:border-[#f7ab0a]/40 hover:text-[#f7ab0a];
   }
 }
 

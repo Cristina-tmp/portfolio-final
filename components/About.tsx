@@ -57,7 +57,7 @@ const About = ({ pageInfo }: Props) => {
 
         <p className="text-lg text-gray-500 whitespace-pre-line font-serif">
           {" "}
-          🌟 Your Success is My Priority: When you choose to work with me,
+          🌟 Commit To Your Success: When you choose to work with me,
           you&apos;re selecting a dedicated partner{" "}
           <span className="font-bold text-[#f7ab0a]">committed </span>
           to your success.{" "}
@@ -66,7 +66,7 @@ const About = ({ pageInfo }: Props) => {
         <p className="text-lg text-gray-500 whitespace-pre-line font-serif">
           {" "}
           🚀 Lead the Way: Specializing in web design and development, I&apos;m
-          here to drive business growth and deliver consistent results for{" "}
+          here to get more eyeballs on{" "}
           <span className="font-bold text-[#f7ab0a]">your brand. </span>
         </p>
       </div>

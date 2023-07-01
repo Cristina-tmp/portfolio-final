@@ -31,7 +31,7 @@ function Contact({ pageInfo }: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen flex flex-col w-full relative text-center md:text-left md:flex-row justify-evenly items-center mx-auto"
+      className="h-screen flex flex-col relative text-center md:text-left md:flex-row justify-evenly items-center mx-4"
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
@@ -42,22 +42,22 @@ function Contact({ pageInfo }: Props) {
           {`Let's Talk`}
         </h4>
 
-        <div className="relative flex flex-col items-start space-y-4">
-          <div className="flex items-center justify-center space-x-5 mx-auto">
+        <div className="relative flex flex-col items-center space-y-4 mx-auto">
+          <div className="flex items-center justify-center space-x-5 ">
             <PhoneIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
             <p className="text-lg sm:text-2xl text-gray-500">
               {pageInfo.phoneNumber}
             </p>
           </div>
 
-          <div className="flex items-center justify-center space-x-5 mx-auto">
+          <div className="flex items-center justify-center space-x-5 ">
             <EnvelopeIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
             <p className="text-lg sm:text-2xl text-gray-500">
               {pageInfo.email}
             </p>
           </div>
 
-          <div className="flex items-center justify-center space-x-5 mb-8 mx-auto">
+          <div className="flex items-center justify-center space-x-5 ">
             <MapPinIcon className="animate-pulse text-[#f7ab0a] h-7 w-7" />
             <p className="text-lg sm:text-2xl text-gray-500">
               {pageInfo.address}
@@ -67,21 +67,20 @@ function Contact({ pageInfo }: Props) {
           <form
             onSubmit={handleSubmit(onSubmit)}
             action=""
-            className="flex flex-col space-y-3 w-full max-w-2xl px-8 mx-auto"
+            className="flex flex-col w-full space-y-3 sm:mx-auto"
           >
-            {" "}
             {/* Adjusted width using max-w-2xl */}
-            <div className="flex space-x-2 ">
+            <div className="flex flex-col sm:flex-row sm:space-x-2  ">
               <input
                 {...register("name")}
                 placeholder="Name"
-                className="contactInput"
+                className="contactInput sm:h-15 mb-4 sm:mb-0"
                 type="text"
               />
               <input
                 {...register("email")}
                 placeholder="Email"
-                className="contactInput"
+                className="contactInput sm:h-15"
                 type="email"
               />
             </div>

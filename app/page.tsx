@@ -80,6 +80,7 @@ export default function LandingPage() {
     <div className="h-screen scroll-smooth  z-0">
       <Head>
         <title>Landing Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <section
